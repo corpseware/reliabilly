@@ -2,7 +2,7 @@
 ---
 
 Build Status: [![CircleCI](https://circleci.com/gh/corpseware/reliabilly.svg?style=svg)](https://circleci.com/gh/corpseware/reliabilly)
-
+Best Practices: [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/2615/badge)](https://bestpractices.coreinfrastructure.org/projects/2615)
 A micro-service scaffolding framework that provides high speed development velocity without sacrificing quality.
 
 
