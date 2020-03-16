@@ -1,3 +1,4 @@
+import sys
 from jira import JIRA, JIRAError
 from reliabilly.settings import Constants
 
@@ -10,7 +11,7 @@ def get_default_task_client(user, token, baseurl=Constants.TASK_MANAGEMENT_URL_D
         client = JIRA(baseurl, basic_auth=(user, token))
     except JIRAError as ex:
         print(ex)
-        exit(False)
+        sys.exit(False)
 
     return client
 

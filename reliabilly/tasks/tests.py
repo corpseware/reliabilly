@@ -1,3 +1,4 @@
+import sys
 import os
 from time import sleep
 from invoke import task
@@ -91,7 +92,7 @@ def int_test(ctx, target=DEFAULT_INT_TARGET):
             print(f'Tests failed for {service_name}')
             if target == DEFAULT_INT_TARGET:
                 ctx.run(DOCKER_PRINT_STATUS_CMD)
-            exit(1)
+            sys.exit(1)
 
 
 @task(optional=['target'], aliases=['int'])

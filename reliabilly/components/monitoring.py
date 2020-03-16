@@ -7,8 +7,8 @@ from reliabilly.settings import Constants, Settings
 from reliabilly.components.tools.stats_client import StatsLogClient
 
 
-def get_elapsed_milliseconds(time_start, time_end):
-    return abs(round((time_end - time_start) * 1000, 1))
+def get_elapsed_milliseconds(time_from, time_to):
+    return abs(round((time_to - time_from) * 1000, 1))
 
 
 def monitor(monitor_name=Constants.EMPTY):

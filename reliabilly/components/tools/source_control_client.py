@@ -1,3 +1,4 @@
+import sys
 import re
 
 from github import Github, GithubException
@@ -12,7 +13,7 @@ def get_default_svn_client(token, baseurl=Constants.SOURCE_CONTROL_URL_DEFAULT):
         client = Github(base_url=baseurl, login_or_token=token)
     except GithubException as ex:
         print(ex)
-        exit(False)
+        sys.exit(False)
 
     return client
 

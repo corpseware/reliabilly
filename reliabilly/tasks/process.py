@@ -1,4 +1,5 @@
 # pylint: disable=invalid-name,too-many-arguments
+import sys
 import json
 import base64
 from glob import glob
@@ -46,7 +47,7 @@ def check_service_versions(_, version, sleep=Constants.DEFAULT_VERSION_TIMEOUT, 
     match = check_versions(target, version, Settings.SERVICES, sleep)
     if not match:
         print('Version check failed!')
-        exit(1)
+        sys.exit(1)
     print('Version check succeeded!')
 
 
