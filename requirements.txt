@@ -11,7 +11,7 @@ icalendar==4.0.3
 inflection==0.3.1
 jira==2.0.0
 Jinja2==2.10.1
-nameko==2.11.0
+nameko==2.14.0
 pendulum==2.0.4
 pluggy==0.8.0
 pymongo==3.7.2
